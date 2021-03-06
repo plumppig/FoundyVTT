@@ -3,8 +3,9 @@
 
 for(let arg of args)
 {
-    try{
-        let token = canvas.tokens.placeables.find(token => token.name === arg).update({"hidden": false});
-        console.log(arg," worked");
-    }catch(error){ console.log(error) }
+    try
+    {
+        canvas.tokens.placeables.find(token => token.name === arg).update({"hidden": false});
+    }
+    catch(error) {}
 }
